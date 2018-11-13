@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour {
 	public int speed;
 	public int sprint;
 	public bool pick;
-	public bool pickedUp;
+	public PickUp pickedUp = null;
 	public bool drop;
 	public GameObject Player;
 

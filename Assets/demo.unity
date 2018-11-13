@@ -910,6 +910,7 @@ GameObject:
   - component: {fileID: 627782824}
   - component: {fileID: 627782826}
   - component: {fileID: 627782825}
+  - component: {fileID: 627782827}
   m_Layer: 5
   m_Name: Wine
   m_TagString: Untagged
@@ -975,6 +976,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 627782823}
   m_CullTransparentMesh: 0
+--- !u!114 &627782827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627782823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da9aa0cb96983b3439a0d12488bf18e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wine: {fileID: 627782825}
+  count: 0
 --- !u!1001 &650992615
 Prefab:
   m_ObjectHideFlags: 0
@@ -1014,6 +1028,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114298151824708420, guid: 10b8600c4ff50c341ae68e662b3b07df,
+        type: 2}
+      propertyPath: Wine
+      value: 
+      objectReference: {fileID: 627782825}
+    - target: {fileID: 114298151824708420, guid: 10b8600c4ff50c341ae68e662b3b07df,
+        type: 2}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 627782827}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10b8600c4ff50c341ae68e662b3b07df, type: 2}
   m_IsPrefabAsset: 0
@@ -1648,15 +1672,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4017551172911128, guid: 9da5f8ca2d6ec6b438736ebed55ad455, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.37
+      value: 7.14
       objectReference: {fileID: 0}
     - target: {fileID: 4017551172911128, guid: 9da5f8ca2d6ec6b438736ebed55ad455, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.65
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4017551172911128, guid: 9da5f8ca2d6ec6b438736ebed55ad455, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.39
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 4017551172911128, guid: 9da5f8ca2d6ec6b438736ebed55ad455, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1735,7 +1759,7 @@ MonoBehaviour:
   speed: 8
   sprint: 10
   pick: 0
-  pickedUp: 0
+  pickedUp: {fileID: 0}
   drop: 0
   Player: {fileID: 774432599}
 --- !u!4 &1006851030
@@ -2007,6 +2031,11 @@ Prefab:
       propertyPath: m_Name
       value: WorkTop (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 65013015983022246, guid: fd37710168998084581f9da132b3b04c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd37710168998084581f9da132b3b04c, type: 2}
   m_IsPrefabAsset: 0
@@ -2122,6 +2151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pC: {fileID: 0}
+  score: {fileID: 0}
   IsBottle: 0
 --- !u!114 &1204544460
 MonoBehaviour:
@@ -2708,6 +2738,16 @@ Prefab:
       propertyPath: m_Name
       value: WorkTop (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 65399674223257286, guid: fd37710168998084581f9da132b3b04c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65013015983022246, guid: fd37710168998084581f9da132b3b04c,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd37710168998084581f9da132b3b04c, type: 2}
   m_IsPrefabAsset: 0
@@ -2945,6 +2985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pC: {fileID: 0}
+  score: {fileID: 0}
   IsBottle: 0
 --- !u!65 &1757973452
 BoxCollider:

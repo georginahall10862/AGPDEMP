@@ -7,16 +7,13 @@ public class DestroyBottle : MonoBehaviour
 	public Text Wine;
 	int count;
 
-	void OnCollisionEnter (Collision col)
+	void OnTriggerEnter (Collider col)
 	{
-		print ("bottled");
+		/*print ("bottled");
 		if(col.gameObject.tag == "Bottle")
 		{
 			Destroy(col.gameObject);
 			count++;
-		}
-	}
-	void Update (){
-		Wine.text = "Wine = " + count;
+		}*/
 	}
 }
